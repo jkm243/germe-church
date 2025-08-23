@@ -9,12 +9,12 @@ const Hero: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-8">
-              <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
+              <p className="text-royal-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
                 Assemblée des Frères Chrétiens
               </p>
               <h1 className="text-5xl md:text-7xl font-light text-slate-800 mb-6 leading-tight">
                 Amis du
-                <span className="block text-amber-600 font-normal">Germe</span>
+                <span className="block text-vivid-green-600 font-normal">Germe</span>
               </h1>
             </div>
             
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
               <blockquote className="text-xl md:text-2xl text-slate-600 font-light italic leading-relaxed mb-4">
                 "Car voici, je ferai venir mon serviteur, le Germe."
               </blockquote>
-              <cite className="text-amber-600 text-sm font-medium tracking-wide">
+              <cite className="text-vivid-green-600 text-sm font-medium tracking-wide">
                 — Zacharie 3:8
               </cite>
             </div>
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
                 Découvrir notre assemblée
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="text-slate-600 hover:text-amber-600 px-8 py-4 text-sm font-medium tracking-wide transition-colors border-b border-transparent hover:border-amber-600">
+              <button className="text-slate-600 hover:text-vivid-green-600 px-8 py-4 text-sm font-medium tracking-wide transition-colors border-b border-transparent hover:border-vivid-green-600">
                 Nos prédications
               </button>
             </div>
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-16">
             <div className="text-center">
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-6 h-6 bg-amber-600 rounded-full"></div>
+                <div className="w-6 h-6 bg-vivid-green-600 rounded-full"></div>
               </div>
               <h3 className="text-lg font-medium text-slate-800 mb-4">Communauté Mondiale</h3>
               <p className="text-slate-600 font-light leading-relaxed">
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-6 h-6 bg-amber-600 rounded-full"></div>
+                <div className="w-6 h-6 bg-vivid-green-600 rounded-full"></div>
               </div>
               <h3 className="text-lg font-medium text-slate-800 mb-4">Enseignement Biblique</h3>
               <p className="text-slate-600 font-light leading-relaxed">
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-6 h-6 bg-amber-600 rounded-full"></div>
+                <div className="w-6 h-6 bg-vivid-green-600 rounded-full"></div>
               </div>
               <h3 className="text-lg font-medium text-slate-800 mb-4">Croissance Spirituelle</h3>
               <p className="text-slate-600 font-light leading-relaxed">
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
             "Nous sommes appelés à être des témoins authentiques de l'amour du Christ, 
             portant la lumière de l'évangile dans un monde qui a soif de vérité."
           </blockquote>
-          <cite className="text-amber-600 font-medium tracking-wide">
+          <cite className="text-vivid-green-600 font-medium tracking-wide">
             Frère Paul André
           </cite>
         </div>
