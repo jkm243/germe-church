@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AuthProvider } from './contexts/AuthContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -34,13 +35,15 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50">
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-      <main className="pt-16">
-        {renderSection()}
-      </main>
-      <Footer />
-    </div>
+    <AuthProvider>
+      <div className="min-h-screen bg-stone-50">
+        <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+        <main className="pt-16">
+          {renderSection()}
+        </main>
+        <Footer />
+      </div>
+    </AuthProvider>
   );
 }
 

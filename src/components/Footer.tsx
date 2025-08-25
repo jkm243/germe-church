@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="mb-8">
               <h3 className="text-xl font-light text-white mb-2">AFC - Amis du Germe</h3>
-              <p className="text-vivid-green-400 text-sm font-medium tracking-widest uppercase">
+              <p className="text-amber-400 text-sm font-medium tracking-widest uppercase">
                 Assemblée des Frères Chrétiens
               </p>
             </div>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               répandant l'évangile et édifiant les saints selon les enseignements bibliques.
             </p>
             <div className="bg-slate-700 p-6 mb-8">
-              <blockquote className="text-vivid-green-400 font-light italic mb-2">
+              <blockquote className="text-amber-400 font-light italic mb-2">
                 "Car voici, je ferai venir mon serviteur, le Germe."
               </blockquote>
               <cite className="text-slate-400 text-sm">— Zacharie 3:8</cite>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-slate-300 hover:text-vivid-green-400 transition-colors text-sm font-light"
+                    className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-light"
                   >
                     {link.name}
                   </a>
@@ -68,21 +68,21 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-medium text-white mb-8">Contact</h4>
             <div className="space-y-4 mb-8">
               <div className="flex items-start space-x-3">
-                <MapPin className="text-vivid-green-400 mt-1 flex-shrink-0" size={16} />
+                <MapPin className="text-amber-400 mt-1 flex-shrink-0" size={16} />
                 <div>
                   <p className="text-white font-medium text-sm">Siège Principal</p>
                   <p className="text-slate-300 text-sm">Kinshasa, RDC</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="text-vivid-green-400 flex-shrink-0" size={16} />
-                <a href="tel:+24381234567" className="text-slate-300 hover:text-vivid-green-400 transition-colors text-sm">
+                <Phone className="text-amber-400 flex-shrink-0" size={16} />
+                <a href="tel:+24381234567" className="text-slate-300 hover:text-amber-400 transition-colors text-sm">
                   +243 81 234 5678
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="text-vivid-green-400 flex-shrink-0" size={16} />
-                <a href="mailto:contact@amisdugerme.org" className="text-slate-300 hover:text-vivid-green-400 transition-colors text-sm">
+                <Mail className="text-amber-400 flex-shrink-0" size={16} />
+                <a href="mailto:contact@amisdugerme.org" className="text-slate-300 hover:text-amber-400 transition-colors text-sm">
                   contact@amisdugerme.org
                 </a>
               </div>
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Biblical Verse Bottom */}
-      <div className="bg-vivid-green-600 text-slate-800">
+      <div className="bg-amber-600 text-slate-800">
         <div className="max-w-6xl mx-auto px-6 py-4 text-center">
           <p className="text-sm font-medium">
             "Allez, faites de toutes les nations des disciples" — Matthieu 28:19

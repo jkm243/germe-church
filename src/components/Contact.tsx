@@ -96,13 +96,13 @@ const Contact: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
             Nous Joindre
           </p>
           <h1 className="text-4xl md:text-5xl font-light text-slate-800 mb-8">
             Contact
           </h1>
-          <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
+          <div className="w-16 h-px bg-amber-600 mx-auto"></div>
         </div>
 
         {/* Contact Form & Info */}
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="Nom complet"
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -131,7 +131,7 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Contact: React.FC = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="Téléphone"
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -152,7 +152,7 @@ const Contact: React.FC = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors"
                   >
                     <option value="">Sujet</option>
                     <option value="information">Demande d'information</option>
@@ -170,7 +170,7 @@ const Contact: React.FC = () => {
                   required
                   rows={6}
                   placeholder="Votre message"
-                  className="w-full px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors resize-vertical"
+                  className="w-full px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors resize-vertical"
                 ></textarea>
               </div>
               <button
@@ -189,18 +189,18 @@ const Contact: React.FC = () => {
               <h3 className="text-xl font-medium text-slate-800 mb-6">Siège Principal</h3>
               <div className="space-y-4 text-slate-600">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="text-vivid-green-600 mt-1 flex-shrink-0" size={18} />
+                  <MapPin className="text-amber-600 mt-1 flex-shrink-0" size={18} />
                   <div>
                     <p className="font-medium">Kinshasa, République Démocratique du Congo</p>
                     <p className="text-sm">Avenue de la Paix, Commune de Lingwala</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="text-vivid-green-600 flex-shrink-0" size={18} />
+                  <Phone className="text-amber-600 flex-shrink-0" size={18} />
                   <p>+243 81 234 5678</p>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="text-vivid-green-600 flex-shrink-0" size={18} />
+                  <Mail className="text-amber-600 flex-shrink-0" size={18} />
                   <p>contact@amisdugerme.org</p>
                 </div>
               </div>
@@ -210,21 +210,21 @@ const Contact: React.FC = () => {
               <h3 className="text-xl font-medium text-slate-800 mb-6">Horaires des Services</h3>
               <div className="space-y-3 text-slate-600">
                 <div className="flex items-center space-x-3">
-                  <Clock className="text-vivid-green-600 flex-shrink-0" size={18} />
+                  <Clock className="text-amber-600 flex-shrink-0" size={18} />
                   <div>
                     <p className="font-medium">Dimanche - Service Principal</p>
                     <p className="text-sm">10h00 - 12h30</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Clock className="text-vivid-green-600 flex-shrink-0" size={18} />
+                  <Clock className="text-amber-600 flex-shrink-0" size={18} />
                   <div>
                     <p className="font-medium">Mercredi - Étude Biblique</p>
                     <p className="text-sm">19h00 - 21h00</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Clock className="text-vivid-green-600 flex-shrink-0" size={18} />
+                  <Clock className="text-amber-600 flex-shrink-0" size={18} />
                   <div>
                     <p className="font-medium">Samedi - Réunion des Jeunes</p>
                     <p className="text-sm">18h00 - 20h00</p>
@@ -242,14 +242,14 @@ const Contact: React.FC = () => {
               <h2 className="text-3xl font-light text-slate-800 mb-8">
                 Nos Implantations Mondiales
               </h2>
-              <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
+              <div className="w-16 h-px bg-amber-600 mx-auto"></div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {locations.map((location, index) => (
                 <div key={index} className={`p-6 ${location.isHeadquarters ? 'bg-slate-800 text-white' : 'bg-white border border-gray-100'}`}>
                   {location.isHeadquarters && (
-                    <div className="text-vivid-green-400 text-xs font-medium tracking-widest uppercase mb-4">
+                    <div className="text-amber-400 text-xs font-medium tracking-widest uppercase mb-4">
                       Siège Principal
                     </div>
                   )}
@@ -261,15 +261,15 @@ const Contact: React.FC = () => {
                   </p>
                   <div className={`space-y-2 text-sm ${location.isHeadquarters ? 'text-slate-300' : 'text-slate-600'}`}>
                     <div className="flex items-start space-x-2">
-                      <MapPin size={14} className={`mt-0.5 flex-shrink-0 ${location.isHeadquarters ? 'text-vivid-green-400' : 'text-vivid-green-600'}`} />
+                      <MapPin size={14} className={`mt-0.5 flex-shrink-0 ${location.isHeadquarters ? 'text-amber-400' : 'text-amber-600'}`} />
                       <p>{location.address}</p>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Phone size={14} className={`flex-shrink-0 ${location.isHeadquarters ? 'text-vivid-green-400' : 'text-vivid-green-600'}`} />
+                      <Phone size={14} className={`flex-shrink-0 ${location.isHeadquarters ? 'text-amber-400' : 'text-amber-600'}`} />
                       <p>{location.phone}</p>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Mail size={14} className={`flex-shrink-0 ${location.isHeadquarters ? 'text-vivid-green-400' : 'text-vivid-green-600'}`} />
+                      <Mail size={14} className={`flex-shrink-0 ${location.isHeadquarters ? 'text-amber-400' : 'text-amber-600'}`} />
                       <p className="truncate">{location.email}</p>
                     </div>
                   </div>

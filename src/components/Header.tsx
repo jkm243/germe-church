@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
           <div className="flex items-center cursor-pointer" onClick={() => setActiveSection('accueil')}>
             <div className="text-left">
               <h1 className="text-xl font-light text-slate-800 tracking-wide">AFC</h1>
-              <p className="text-xs text-vivid-green-600 font-medium tracking-widest uppercase">Amis du Germe</p>
+              <p className="text-xs text-amber-600 font-medium tracking-widest uppercase">Amis du Germe</p>
             </div>
           </div>
 
@@ -36,15 +36,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
                 <button
                   key={item.id}
                   onClick={() => setActiveSection(item.id)}
-                  className={`text-sm font-light tracking-wide transition-all duration-300 hover:text-vivid-green-600 relative ${
+                  className={`text-sm font-light tracking-wide transition-all duration-300 hover:text-amber-600 relative ${
                     activeSection === item.id
-                      ? 'text-vivid-green-600'
+                      ? 'text-amber-600'
                       : 'text-slate-600'
                   }`}
                 >
                   {item.label}
                   {activeSection === item.id && (
-                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-vivid-green-600 rounded-full"></div>
+                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-amber-600 rounded-full"></div>
                   )}
                 </button>
               ))}
@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-slate-600 hover:text-vivid-green-600 transition-colors"
+              className="p-2 text-slate-600 hover:text-amber-600 transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -75,8 +75,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
                   }}
                   className={`block w-full text-left text-base font-light tracking-wide transition-colors ${
                     activeSection === item.id
-                      ? 'text-vivid-green-600'
-                      : 'text-slate-600 hover:text-vivid-green-600'
+                      ? 'text-amber-600'
+                      : 'text-slate-600 hover:text-amber-600'
                   }`}
                 >
                   {item.label}
