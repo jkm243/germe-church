@@ -87,7 +87,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId, onBack }) => {
       <div className="max-w-4xl mx-auto px-6">
         <button
           onClick={onBack}
-          className="flex items-center text-deep-blue-500 hover:text-deep-blue-600 mb-8 transition-colors"
+          className="flex items-center text-church-blue hover:text-church-green mb-8 transition-colors"
         >
           <ArrowLeft size={20} className="mr-2" />
           Retour au blog
@@ -115,6 +115,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId, onBack }) => {
             </div>
             
             <div className="w-full h-px bg-vivid-green-500 mb-8"></div>
+            <div className="w-full h-px bg-church-green mb-8"></div>
           </header>
 
           <div 

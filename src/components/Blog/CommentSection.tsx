@@ -72,7 +72,7 @@ const CommentSection: React.FC<CommentSectionProps> = ({ postId }) => {
   return (
     <div className="border-t border-gray-100 pt-12">
       <div className="flex items-center mb-8">
-        <MessageCircle className="text-vivid-green-500 mr-3" size={24} />
+        <MessageCircle className="text-church-green mr-3" size={24} />
         <h3 className="text-2xl font-light text-slate-800">
           Commentaires ({comments.length})
         </h3>
@@ -86,14 +86,14 @@ const CommentSection: React.FC<CommentSectionProps> = ({ postId }) => {
             onChange={(e) => setNewComment(e.target.value)}
             placeholder="Partagez votre réflexion..."
             rows={4}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none transition-colors resize-vertical"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none transition-colors resize-vertical"
             required
           />
         </div>
         <button
           type="submit"
           disabled={loading || !newComment.trim()}
-          className="flex items-center bg-deep-blue-500 hover:bg-deep-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors disabled:opacity-50"
+          className="flex items-center bg-church-blue hover:bg-church-blue/90 text-white px-6 py-3 rounded-lg font-medium transition-colors disabled:opacity-50"
         >
           <Send size={16} className="mr-2" />
           {loading ? 'Envoi...' : 'Publier le commentaire'}
@@ -111,7 +111,7 @@ const CommentSection: React.FC<CommentSectionProps> = ({ postId }) => {
           </p>
         ) : (
           comments.map((comment) => (
-            <div key={comment.id} className="border-l-4 border-vivid-green-500 pl-6">
+            <div key={comment.id} className="border-l-4 border-church-green pl-6">
               <div className="flex items-center mb-3">
                 <div className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center mr-3">
                   <User size={16} className="text-slate-500" />

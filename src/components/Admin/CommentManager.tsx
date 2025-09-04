@@ -91,7 +91,7 @@ const CommentManager: React.FC = () => {
       <div className="p-6 border-b border-gray-200">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <MessageSquare className="text-deep-blue-500 mr-3" size={24} />
+            <MessageSquare className="text-church-blue mr-3" size={24} />
             <h2 className="text-xl font-medium text-slate-800">Gestion des Commentaires</h2>
             {pendingCount > 0 && (
               <span className="ml-3 bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">
@@ -104,7 +104,7 @@ const CommentManager: React.FC = () => {
               onClick={() => setFilter('pending')}
               className={`px-3 py-2 text-sm rounded-lg ${
                 filter === 'pending' 
-                  ? 'bg-deep-blue-500 text-white' 
+                  ? 'bg-church-blue text-white' 
                   : 'text-slate-600 hover:bg-gray-100'
               }`}
             >
@@ -114,7 +114,7 @@ const CommentManager: React.FC = () => {
               onClick={() => setFilter('approved')}
               className={`px-3 py-2 text-sm rounded-lg ${
                 filter === 'approved' 
-                  ? 'bg-deep-blue-500 text-white' 
+                  ? 'bg-church-blue text-white' 
                   : 'text-slate-600 hover:bg-gray-100'
               }`}
             >
@@ -124,7 +124,7 @@ const CommentManager: React.FC = () => {
               onClick={() => setFilter('all')}
               className={`px-3 py-2 text-sm rounded-lg ${
                 filter === 'all' 
-                  ? 'bg-deep-blue-500 text-white' 
+                  ? 'bg-church-blue text-white' 
                   : 'text-slate-600 hover:bg-gray-100'
               }`}
             >
@@ -137,7 +137,7 @@ const CommentManager: React.FC = () => {
       <div className="p-6">
         {loading ? (
           <div className="text-center py-8">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-deep-blue-500 mx-auto"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-church-blue mx-auto"></div>
             <p className="text-slate-500 mt-2">Chargement...</p>
           </div>
         ) : comments.length === 0 ? (

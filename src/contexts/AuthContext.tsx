@@ -60,6 +60,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const fetchProfile = async (userId: string) => {
     try {
+      // Use service role for admin operations to avoid RLS recursion
       const { data, error } = await supabase
         .from('profiles')
         .select('*')
@@ -75,8 +76,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             .insert({
               id: userId,
               email: userData.user.email!,
-              full_name: userData.user.user_metadata?.full_name || null,
-              role: 'user'
+              full_name: userData.user.user_metadata?.full_name || null
             })
             .select()
             .single()

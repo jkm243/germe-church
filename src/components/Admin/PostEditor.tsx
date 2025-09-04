@@ -166,7 +166,7 @@ const PostEditor: React.FC<PostEditorProps> = ({ post, onClose }) => {
               value={formData.title}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none"
             />
           </div>
           <div>
@@ -177,7 +177,7 @@ const PostEditor: React.FC<PostEditorProps> = ({ post, onClose }) => {
               name="category"
               value={formData.category}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none"
             >
               {categories.map(cat => (
                 <option key={cat.value} value={cat.value}>{cat.label}</option>
@@ -196,7 +196,7 @@ const PostEditor: React.FC<PostEditorProps> = ({ post, onClose }) => {
             onChange={handleInputChange}
             required
             rows={3}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none resize-vertical"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none resize-vertical"
             placeholder="Résumé de l'article..."
           />
         </div>
@@ -211,7 +211,7 @@ const PostEditor: React.FC<PostEditorProps> = ({ post, onClose }) => {
             onChange={handleInputChange}
             required
             rows={15}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none resize-vertical"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none resize-vertical"
             placeholder="Contenu de l'article..."
           />
         </div>
@@ -250,7 +250,7 @@ const PostEditor: React.FC<PostEditorProps> = ({ post, onClose }) => {
           <button
             type="submit"
             disabled={loading}
-            className="flex items-center bg-deep-blue-500 hover:bg-deep-blue-600 text-white px-6 py-3 rounded-lg transition-colors disabled:opacity-50"
+            className="flex items-center bg-church-blue hover:bg-church-blue/90 text-white px-6 py-3 rounded-lg transition-colors disabled:opacity-50"
           >
             <Save size={16} className="mr-2" />
             {loading ? 'Sauvegarde...' : 'Sauvegarder'}

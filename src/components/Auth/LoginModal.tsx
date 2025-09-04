@@ -83,7 +83,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none transition-colors"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none transition-colors"
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none transition-colors"
+                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none transition-colors"
               />
             </div>
           </div>
@@ -112,7 +112,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:border-deep-blue-500 focus:outline-none transition-colors"
+                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:border-church-blue focus:outline-none transition-colors"
               />
             </div>
           </div>
@@ -126,7 +126,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-deep-blue-500 hover:bg-deep-blue-600 text-white py-3 rounded-lg font-medium transition-colors disabled:opacity-50"
+            className="w-full bg-church-blue hover:bg-church-blue/90 text-white py-3 rounded-lg font-medium transition-colors disabled:opacity-50"
           >
             {loading ? 'Chargement...' : (isLogin ? 'Se connecter' : "S'inscrire")}
           </button>
@@ -135,7 +135,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
         <div className="text-center mt-6">
           <button
             onClick={() => setIsLogin(!isLogin)}
-            className="text-deep-blue-500 hover:text-deep-blue-600 text-sm"
+            className="text-church-blue hover:text-church-blue/80 text-sm"
           >
             {isLogin ? "Pas encore de compte ? S'inscrire" : 'Déjà un compte ? Se connecter'}
           </button>

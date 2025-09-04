@@ -102,7 +102,7 @@ const PostManager: React.FC = () => {
           <h2 className="text-xl font-medium text-slate-800">Gestion des Articles</h2>
           <button
             onClick={() => setShowEditor(true)}
-            className="flex items-center bg-deep-blue-500 hover:bg-deep-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
+            className="flex items-center bg-church-blue hover:bg-church-blue/90 text-white px-4 py-2 rounded-lg transition-colors"
           >
             <Plus size={16} className="mr-2" />
             Nouvel Article
@@ -113,7 +113,7 @@ const PostManager: React.FC = () => {
       <div className="p-6">
         {loading ? (
           <div className="text-center py-8">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-deep-blue-500 mx-auto"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-church-blue mx-auto"></div>
             <p className="text-slate-500 mt-2">Chargement...</p>
           </div>
         ) : posts.length === 0 ? (
@@ -141,7 +141,7 @@ const PostManager: React.FC = () => {
                         <h3 className="font-medium text-slate-800">{post.title}</h3>
                         <p className="text-sm text-slate-500 mt-1">{post.excerpt.substring(0, 100)}...</p>
                         {post.featured && (
-                          <span className="inline-block bg-vivid-green-100 text-vivid-green-800 text-xs px-2 py-1 rounded-full mt-1">
+                          <span className="inline-block bg-church-green/10 text-church-green text-xs px-2 py-1 rounded-full mt-1">
                             À la une
                           </span>
                         )}
@@ -165,14 +165,14 @@ const PostManager: React.FC = () => {
                       <div className="flex items-center space-x-2">
                         <button
                           onClick={() => handleEditPost(post)}
-                          className="text-slate-600 hover:text-deep-blue-600 p-1"
+                          className="text-slate-600 hover:text-church-blue p-1"
                           title="Modifier"
                         >
                           <Edit size={16} />
                         </button>
                         <button
                           onClick={() => handleTogglePublished(post.id, post.published)}
-                          className="text-slate-600 hover:text-vivid-green-600 p-1"
+                          className="text-slate-600 hover:text-church-green p-1"
                           title={post.published ? 'Dépublier' : 'Publier'}
                         >
                           {post.published ? <EyeOff size={16} /> : <Eye size={16} />}

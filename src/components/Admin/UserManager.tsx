@@ -56,7 +56,7 @@ const UserManager: React.FC = () => {
     <div className="bg-white rounded-lg border border-gray-200">
       <div className="p-6 border-b border-gray-200">
         <div className="flex items-center">
-          <Users className="text-deep-blue-500 mr-3" size={24} />
+          <Users className="text-church-blue mr-3" size={24} />
           <h2 className="text-xl font-medium text-slate-800">Gestion des Utilisateurs</h2>
         </div>
       </div>
@@ -64,7 +64,7 @@ const UserManager: React.FC = () => {
       <div className="p-6">
         {loading ? (
           <div className="text-center py-8">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-deep-blue-500 mx-auto"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-church-blue mx-auto"></div>
             <p className="text-slate-500 mt-2">Chargement...</p>
           </div>
         ) : users.length === 0 ? (
@@ -123,7 +123,7 @@ const UserManager: React.FC = () => {
                       <select
                         value={user.role}
                         onChange={(e) => handleRoleChange(user.id, e.target.value as 'user' | 'admin')}
-                        className="text-sm border border-gray-200 rounded px-2 py-1 focus:border-deep-blue-500 focus:outline-none"
+                        className="text-sm border border-gray-200 rounded px-2 py-1 focus:border-church-blue focus:outline-none"
                       >
                         <option value="user">Utilisateur</option>
                         <option value="admin">Administrateur</option>
