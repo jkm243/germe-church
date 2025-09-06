@@ -20,10 +20,10 @@ const Hero: React.FC = () => {
             
             <div className="mb-12">
               <blockquote className="text-xl md:text-2xl text-slate-600 font-light italic leading-relaxed mb-4">
-                "Car voici, je ferai venir mon serviteur, le Germe."
+                "Les mensonges ne régnera pas toujours"
               </blockquote>
               <cite className="text-amber-600 text-sm font-medium tracking-wide">
-                — Zacharie 3:8
+                — Slogan de l'AFC
               </cite>
             </div>
 
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
               <button className="text-slate-600 hover:text-amber-600 px-8 py-4 text-sm font-medium tracking-wide transition-colors border-b border-transparent hover:border-amber-600">
-                Nos prédications
+                Devenir disciple
               </button>
             </div>
           </div>

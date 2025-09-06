@@ -64,10 +64,10 @@ const Sermons: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
-            Enseignements
+            Formation Spirituelle
           </p>
           <h1 className="text-4xl md:text-5xl font-light text-slate-800 mb-8">
-            Prédications
+            Devenir Disciple
           </h1>
           <div className="w-16 h-px bg-amber-600 mx-auto"></div>
         </div>
@@ -77,12 +77,12 @@ const Sermons: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
-                Dernière prédication
+                Dernière formation
               </p>
               <h2 className="text-3xl font-light text-slate-800 mb-6">Le Germe de Justice</h2>
               <p className="text-slate-600 font-light leading-relaxed mb-8">
-                Une méditation profonde sur Zacharie 3:8 et la promesse du Germe qui vient. 
-                Découvrez la richesse de cette prophétie messianique.
+                Une formation approfondie sur les fondements de la foi chrétienne et 
+                le chemin pour devenir un véritable disciple du Christ.
               </p>
               <div className="flex items-center space-x-8 text-sm text-slate-500 mb-8">
                 <div className="flex items-center">
@@ -96,7 +96,7 @@ const Sermons: React.FC = () => {
               </div>
               <button className="group bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 text-sm font-medium tracking-wide transition-all duration-300 flex items-center">
                 <Play size={16} className="mr-2" />
-                Écouter maintenant
+                Commencer la formation
               </button>
             </div>
             <div className="relative">
@@ -180,15 +180,15 @@ const Sermons: React.FC = () => {
         <div className="mt-20 py-16 bg-slate-50 -mx-6 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-light text-slate-800 mb-6">
-              Recevez nos dernières prédications
+              Recevez nos dernières formations
             </h2>
             <p className="text-slate-600 font-light mb-8">
-              Abonnez-vous pour être notifié de nos nouveaux enseignements.
+              Abonnez-vous pour être notifié de nos nouvelles formations spirituelles.
             </p>
             <div className="flex max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Votre adresse email"
+                placeholder="Rechercher une formation..."
                 className="flex-1 px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none"
               />
               <button className="bg-slate-800 hover:bg-slate-900 text-white px-6 py-3 font-medium transition-colors">

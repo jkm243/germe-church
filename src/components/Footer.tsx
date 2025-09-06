@@ -40,9 +40,9 @@ const Footer: React.FC = () => {
             </p>
             <div className="bg-slate-700 p-6 mb-8">
               <blockquote className="text-amber-400 font-light italic mb-2">
-                "Car voici, je ferai venir mon serviteur, le Germe."
+                "Les mensonges ne régnera pas toujours"
               </blockquote>
-              <cite className="text-slate-400 text-sm">— Zacharie 3:8</cite>
+              <cite className="text-slate-400 text-sm">— Slogan de l'AFC</cite>
             </div>
           </div>
 
@@ -110,15 +110,15 @@ const Footer: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h5 className="font-medium text-white mb-2">Dimanche</h5>
-              <p className="text-slate-400 text-sm">Service Principal - 10h00</p>
+              <p className="text-slate-400 text-sm">Culte - 09h00</p>
             </div>
             <div>
               <h5 className="font-medium text-white mb-2">Mercredi</h5>
-              <p className="text-slate-400 text-sm">Étude Biblique - 19h00</p>
+              <p className="text-slate-400 text-sm">Culte - 16h00</p>
             </div>
             <div>
-              <h5 className="font-medium text-white mb-2">Samedi</h5>
-              <p className="text-slate-400 text-sm">Réunion des Jeunes - 18h00</p>
+              <h5 className="font-medium text-white mb-2">Vendredi</h5>
+              <p className="text-slate-400 text-sm">Réflexion - 20h00</p>
             </div>
           </div>
         </div>

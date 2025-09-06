@@ -212,22 +212,22 @@ const Contact: React.FC = () => {
                 <div className="flex items-center space-x-3">
                   <Clock className="text-amber-600 flex-shrink-0" size={18} />
                   <div>
-                    <p className="font-medium">Dimanche - Service Principal</p>
-                    <p className="text-sm">10h00 - 12h30</p>
+                    <p className="font-medium">Dimanche - Culte</p>
+                    <p className="text-sm">09h00 - 11h30</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="text-amber-600 flex-shrink-0" size={18} />
                   <div>
-                    <p className="font-medium">Mercredi - Étude Biblique</p>
-                    <p className="text-sm">19h00 - 21h00</p>
+                    <p className="font-medium">Mercredi - Culte</p>
+                    <p className="text-sm">16h00 - 18h00</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="text-amber-600 flex-shrink-0" size={18} />
                   <div>
-                    <p className="font-medium">Samedi - Réunion des Jeunes</p>
-                    <p className="text-sm">18h00 - 20h00</p>
+                    <p className="font-medium">Vendredi - Réflexion</p>
+                    <p className="text-sm">20h00 - 22h00</p>
                   </div>
                 </div>
               </div>

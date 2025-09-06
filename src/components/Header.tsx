@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection, showAd
     { id: 'accueil', label: 'Accueil' },
     { id: 'qui-sommes-nous', label: 'Qui sommes-nous' },
     { id: 'ministeres', label: 'Ministères' },
-    { id: 'predications', label: 'Prédications' },
+    { id: 'predications', label: 'Devenir disciple' },
     { id: 'evenements', label: 'Événements' },
     { id: 'blog', label: 'Blog' },
     { id: 'contact', label: 'Contact' }

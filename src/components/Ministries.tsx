@@ -121,18 +121,18 @@ const Ministries: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center p-8 border border-gray-100">
               <h3 className="text-xl font-medium text-slate-800 mb-2">Dimanche</h3>
-              <p className="text-2xl font-light text-amber-600 mb-4">10h00</p>
-              <p className="text-slate-600 font-light">Service principal avec prédication</p>
+              <p className="text-2xl font-light text-amber-600 mb-4">09h00</p>
+              <p className="text-slate-600 font-light">Culte dominical</p>
             </div>
             <div className="text-center p-8 border border-gray-100">
               <h3 className="text-xl font-medium text-slate-800 mb-2">Mercredi</h3>
-              <p className="text-2xl font-light text-amber-600 mb-4">19h00</p>
-              <p className="text-slate-600 font-light">Étude biblique et prière</p>
+              <p className="text-2xl font-light text-amber-600 mb-4">16h00</p>
+              <p className="text-slate-600 font-light">Culte de mercredi</p>
             </div>
             <div className="text-center p-8 border border-gray-100">
-              <h3 className="text-xl font-medium text-slate-800 mb-2">Samedi</h3>
-              <p className="text-2xl font-light text-amber-600 mb-4">18h00</p>
-              <p className="text-slate-600 font-light">Réunion des jeunes</p>
+              <h3 className="text-xl font-medium text-slate-800 mb-2">Vendredi</h3>
+              <p className="text-2xl font-light text-amber-600 mb-4">20h00</p>
+              <p className="text-slate-600 font-light">Réflexion</p>
             </div>
           </div>
         </div>
