@@ -60,7 +60,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const fetchProfile = async (userId: string) => {
     try {
-      // Use service role for admin operations to avoid RLS recursion
       const { data, error } = await supabase
         .from('profiles')
         .select('*')
@@ -68,23 +67,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         .single()
 
       if (error && error.code === 'PGRST116') {
-        // Profile doesn't exist, create one
-        const { data: userData } = await supabase.auth.getUser()
-        if (userData.user) {
-          const { data: newProfile, error: insertError } = await supabase
-            .from('profiles')
-            .insert({
-              id: userId,
-              email: userData.user.email!,
-              full_name: userData.user.user_metadata?.full_name || null
-            })
-            .select()
-            .single()
-
-          if (!insertError) {
-            setProfile(newProfile)
-          }
-        }
+        // Profile doesn't exist, this is handled by the trigger
+        console.log('Profile not found, will be created by trigger')
       } else if (!error) {
         setProfile(data)
       }

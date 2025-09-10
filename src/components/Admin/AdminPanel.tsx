@@ -17,26 +17,20 @@ const AdminPanel: React.FC = () => {
 
   React.useEffect(() => {
     const checkAdminAccess = async () => {
-      if (!loading && isAdmin) {
+      if (!loading && profile) {
         try {
-          // Test admin access by trying to fetch all profiles
-          const { data, error } = await supabase
-            .from('profiles')
-            .select('id, role')
-            .limit(1)
-
-          if (!error) {
-            setHasAdminAccess(true)
-          }
+          // Simple check based on profile role
+          setHasAdminAccess(profile.role === 'admin')
         } catch (error) {
           console.error('Admin access check failed:', error)
+          setHasAdminAccess(false)
         }
       }
       setIsCheckingAdmin(false)
     }
 
     checkAdminAccess()
-  }, [isAdmin, loading])
+  }, [profile, loading])
 
   if (loading || isCheckingAdmin) {
     return (
