@@ -6,13 +6,13 @@ const About: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
             Notre Histoire
           </p>
           <h1 className="text-4xl md:text-5xl font-light text-slate-800 mb-8">
             Qui Sommes-Nous
           </h1>
-          <div className="w-16 h-px bg-amber-600 mx-auto"></div>
+          <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
         </div>
 
         {/* Main Content */}
@@ -89,7 +89,7 @@ const About: React.FC = () => {
               <h2 className="text-3xl font-light text-slate-800 mb-8">
                 Nos Croyances Fondamentales
               </h2>
-              <div className="w-16 h-px bg-amber-600 mx-auto"></div>
+              <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -120,7 +120,7 @@ const About: React.FC = () => {
                 }
               ].map((belief, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-12 h-12 bg-vivid-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="w-4 h-4 bg-white rounded-full"></div>
                   </div>
                   <h3 className="text-lg font-medium text-slate-800 mb-4">{belief.title}</h3>
@@ -135,15 +135,15 @@ const About: React.FC = () => {
         <div className="py-20">
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div>
-              <div className="text-4xl font-light text-amber-600 mb-2">8</div>
+              <div className="text-4xl font-light text-vivid-green-600 mb-2">8</div>
               <p className="text-slate-600 font-light tracking-wide">Pays d'implantation</p>
             </div>
             <div>
-              <div className="text-4xl font-light text-amber-600 mb-2">50+</div>
+              <div className="text-4xl font-light text-vivid-green-600 mb-2">50+</div>
               <p className="text-slate-600 font-light tracking-wide">Assemblées locales</p>
             </div>
             <div>
-              <div className="text-4xl font-light text-amber-600 mb-2">1000+</div>
+              <div className="text-4xl font-light text-vivid-green-600 mb-2">1000+</div>
               <p className="text-slate-600 font-light tracking-wide">Frères et sœurs</p>
             </div>
           </div>

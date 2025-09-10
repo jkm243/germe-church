@@ -39,24 +39,24 @@ const Ministries: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
             Nos Programmes
           </p>
           <h1 className="text-4xl md:text-5xl font-light text-slate-800 mb-8">
             Ministères
           </h1>
-          <div className="w-16 h-px bg-amber-600 mx-auto"></div>
+          <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
         </div>
 
         {/* Ministries Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
           {ministries.map((ministry, index) => (
             <div key={index} className="group">
-              <div className="border border-gray-100 p-8 h-full hover:border-amber-600 transition-colors duration-300">
-                <div className="w-8 h-8 bg-amber-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300"></div>
+              <div className="border border-gray-100 p-8 h-full hover:border-vivid-green-600 transition-colors duration-300">
+                <div className="w-8 h-8 bg-vivid-green-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300"></div>
                 <h3 className="text-xl font-medium text-slate-800 mb-4">{ministry.title}</h3>
                 <p className="text-slate-600 font-light leading-relaxed mb-6">{ministry.description}</p>
-                <div className="text-sm text-amber-600 font-medium tracking-wide">{ministry.schedule}</div>
+                <div className="text-sm text-vivid-green-600 font-medium tracking-wide">{ministry.schedule}</div>
               </div>
             </div>
           ))}
@@ -77,24 +77,24 @@ const Ministries: React.FC = () => {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                      <div className="w-1 h-1 bg-vivid-green-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
                       Théologie biblique systématique
                     </li>
                     <li className="flex items-start">
-                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                      <div className="w-1 h-1 bg-vivid-green-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
                       Homilétique et prédication
                     </li>
                     <li className="flex items-start">
-                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                      <div className="w-1 h-1 bg-vivid-green-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
                       Histoire de l'Église
                     </li>
                     <li className="flex items-start">
-                      <div className="w-1 h-1 bg-amber-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                      <div className="w-1 h-1 bg-vivid-green-600 rounded-full mt-3 mr-3 flex-shrink-0"></div>
                       Ministère pastoral
                     </li>
                   </ul>
                 </div>
-                <button className="text-slate-800 hover:text-amber-600 font-medium tracking-wide transition-colors border-b border-slate-800 hover:border-amber-600">
+                <button className="text-slate-800 hover:text-vivid-green-600 font-medium tracking-wide transition-colors border-b border-slate-800 hover:border-vivid-green-600">
                   En savoir plus
                 </button>
               </div>
@@ -115,23 +115,23 @@ const Ministries: React.FC = () => {
             <h2 className="text-3xl font-light text-slate-800 mb-8">
               Horaires des Services
             </h2>
-            <div className="w-16 h-px bg-amber-600 mx-auto"></div>
+            <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center p-8 border border-gray-100">
               <h3 className="text-xl font-medium text-slate-800 mb-2">Dimanche</h3>
-              <p className="text-2xl font-light text-amber-600 mb-4">09h00</p>
+              <p className="text-2xl font-light text-vivid-green-600 mb-4">09h00</p>
               <p className="text-slate-600 font-light">Culte dominical</p>
             </div>
             <div className="text-center p-8 border border-gray-100">
               <h3 className="text-xl font-medium text-slate-800 mb-2">Mercredi</h3>
-              <p className="text-2xl font-light text-amber-600 mb-4">16h00</p>
+              <p className="text-2xl font-light text-vivid-green-600 mb-4">16h00</p>
               <p className="text-slate-600 font-light">Culte de mercredi</p>
             </div>
             <div className="text-center p-8 border border-gray-100">
               <h3 className="text-xl font-medium text-slate-800 mb-2">Vendredi</h3>
-              <p className="text-2xl font-light text-amber-600 mb-4">20h00</p>
+              <p className="text-2xl font-light text-vivid-green-600 mb-4">20h00</p>
               <p className="text-slate-600 font-light">Réflexion</p>
             </div>
           </div>
