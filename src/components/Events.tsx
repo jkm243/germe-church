@@ -46,20 +46,20 @@ const Events: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
             Calendrier
           </p>
           <h1 className="text-4xl md:text-5xl font-light text-slate-800 mb-8">
             Événements
           </h1>
-          <div className="w-16 h-px bg-amber-600 mx-auto"></div>
+          <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
         </div>
 
         {/* Featured Event */}
         <div className="mb-20 p-12 bg-slate-50">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-amber-600 text-sm font-medium tracking-widest uppercase mb-4">
+              <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
                 Événement à la une
               </p>
               <h2 className="text-3xl font-light text-slate-800 mb-6">Service de Noël Spécial</h2>
@@ -81,7 +81,7 @@ const Events: React.FC = () => {
                   Kinshasa
                 </div>
               </div>
-              <button className="text-slate-800 hover:text-amber-600 font-medium tracking-wide transition-colors border-b border-slate-800 hover:border-amber-600">
+              <button className="text-slate-800 hover:text-vivid-green-600 font-medium tracking-wide transition-colors border-b border-slate-800 hover:border-vivid-green-600">
                 Plus d'informations
               </button>
             </div>
@@ -98,15 +98,15 @@ const Events: React.FC = () => {
         {/* Events List */}
         <div className="space-y-8 mb-20">
           {events.slice(1).map((event) => (
-            <div key={event.id} className="group border border-gray-100 p-8 hover:border-amber-600 transition-colors duration-300">
+            <div key={event.id} className="group border border-gray-100 p-8 hover:border-vivid-green-600 transition-colors duration-300">
               <div className="grid lg:grid-cols-4 gap-8 items-center">
                 <div className="lg:col-span-3">
                   <div className="flex items-center space-x-4 mb-4">
-                    <span className="text-xs text-amber-600 font-medium tracking-widest uppercase">
+                    <span className="text-xs text-vivid-green-600 font-medium tracking-widest uppercase">
                       {event.category}
                     </span>
                   </div>
-                  <h3 className="text-xl font-medium text-slate-800 mb-3 group-hover:text-amber-600 transition-colors">
+                  <h3 className="text-xl font-medium text-slate-800 mb-3 group-hover:text-vivid-green-600 transition-colors">
                     {event.title}
                   </h3>
                   <p className="text-slate-600 font-light leading-relaxed mb-4">
@@ -128,7 +128,7 @@ const Events: React.FC = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <button className="text-slate-600 hover:text-amber-600 font-medium tracking-wide transition-colors border-b border-transparent hover:border-amber-600">
+                  <button className="text-slate-600 hover:text-vivid-green-600 font-medium tracking-wide transition-colors border-b border-transparent hover:border-vivid-green-600">
                     S'inscrire
                   </button>
                 </div>
@@ -150,7 +150,7 @@ const Events: React.FC = () => {
               <input
                 type="email"
                 placeholder="Votre adresse email"
-                className="flex-1 px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none"
+                className="flex-1 px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none"
               />
               <button className="bg-slate-800 hover:bg-slate-900 text-white px-6 py-3 font-medium transition-colors">
                 S'abonner
