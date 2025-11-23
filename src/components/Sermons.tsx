@@ -64,10 +64,10 @@ const Sermons: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
-            Formation Spirituelle
+            Enseignements
           </p>
           <h1 className="text-4xl md:text-5xl font-light text-slate-800 mb-8">
-            Devenir Disciple
+            Prédications
           </h1>
           <div className="w-16 h-px bg-vivid-green-600 mx-auto"></div>
         </div>
@@ -77,12 +77,12 @@ const Sermons: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-vivid-green-600 text-sm font-medium tracking-widest uppercase mb-4">
-                Dernière formation
+                Dernière prédication
               </p>
               <h2 className="text-3xl font-light text-slate-800 mb-6">Le Germe de Justice</h2>
               <p className="text-slate-600 font-light leading-relaxed mb-8">
-                Une formation approfondie sur les fondements de la foi chrétienne et 
-                le chemin pour devenir un véritable disciple du Christ.
+                Une méditation profonde sur Zacharie 3:8 et la promesse du Germe qui vient. 
+                Découvrez la richesse de cette prophétie messianique.
               </p>
               <div className="flex items-center space-x-8 text-sm text-slate-500 mb-8">
                 <div className="flex items-center">
@@ -96,12 +96,12 @@ const Sermons: React.FC = () => {
               </div>
               <button className="group bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 text-sm font-medium tracking-wide transition-all duration-300 flex items-center">
                 <Play size={16} className="mr-2" />
-                Commencer la formation
+                Écouter maintenant
               </button>
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/8466665/pexels-photo-8466665.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src="https://images.pexels.com/photos/2014775/pexels-photo-2014775.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                 alt="Dernière prédication"
                 className="w-full h-80 object-cover"
               />
@@ -120,14 +120,14 @@ const Sermons: React.FC = () => {
                   placeholder="Rechercher une prédication..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors"
+                  className="w-full pl-12 pr-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors"
                 />
               </div>
             </div>
             <select
               value={selectedSeries}
               onChange={(e) => setSelectedSeries(e.target.value)}
-              className="px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none transition-colors"
+              className="px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none transition-colors"
             >
               {series.map((s) => (
                 <option key={s.id} value={s.id}>{s.name}</option>
@@ -139,7 +139,7 @@ const Sermons: React.FC = () => {
         {/* Sermons List */}
         <div className="space-y-8">
           {filteredSermons.map((sermon) => (
-            <div key={sermon.id} className="group border border-gray-100 p-8 hover:border-vivid-green-600 transition-colors duration-300">
+            <div key={sermon.id} className="group border border-gray-100 p-8 hover:border-amber-600 transition-colors duration-300">
               <div className="grid lg:grid-cols-4 gap-8 items-center">
                 <div className="lg:col-span-3">
                   <div className="flex items-center space-x-4 mb-4">
@@ -180,16 +180,16 @@ const Sermons: React.FC = () => {
         <div className="mt-20 py-16 bg-slate-50 -mx-6 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-light text-slate-800 mb-6">
-              Recevez nos dernières formations
+              Recevez nos dernières prédications
             </h2>
             <p className="text-slate-600 font-light mb-8">
-              Abonnez-vous pour être notifié de nos nouvelles formations spirituelles.
+              Abonnez-vous pour être notifié de nos nouveaux enseignements.
             </p>
             <div className="flex max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Rechercher une formation..."
-                className="flex-1 px-4 py-3 border border-gray-200 focus:border-vivid-green-600 focus:outline-none"
+                placeholder="Votre adresse email"
+                className="flex-1 px-4 py-3 border border-gray-200 focus:border-amber-600 focus:outline-none"
               />
               <button className="bg-slate-800 hover:bg-slate-900 text-white px-6 py-3 font-medium transition-colors">
                 S'abonner

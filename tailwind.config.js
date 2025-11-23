@@ -4,29 +4,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        'vivid-green': {
-          50:  '#f0fdf7',  // très clair, très doux
-  100: '#ccf9df',
-  200: '#8ef0b8',
-  300: '#53e692',
-  400: '#28db75',
-  500: '#02d96b',  // votre couleur principale
-  600: '#02b65c',
-  700: '#02944b',
-  800: '#02753b',
-  900: '#01592f',
+        'royal-blue': {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1a4f8b',
         },
-        'deep-blue': {
-          50:  '#eff2ff',
-  100: '#d2d9ff',
-  200: '#a8b3ff',
-  300: '#7e8aff',
-  400: '#5c68ff',
-  500: '#2a46d5',  // votre couleur principale
-  600: '#243bb8',
-  700: '#1c2e8f',
-  800: '#162373',
-  900: '#11185a',  // plus foncé pour bon contraste
+        'golden': {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b99769',
+          800: '#92400e',
+          900: '#78350f',
         }
       },
       fontFamily: {
